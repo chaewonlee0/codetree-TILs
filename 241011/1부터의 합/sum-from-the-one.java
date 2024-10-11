@@ -11,7 +11,7 @@ public class Main {
 		StringTokenizer st = new StringTokenizer(bf.readLine());
 		int n = Integer.parseInt(st.nextToken());
 
-		int sum = 1, cnt =0;
+		int sum = 0, cnt =0;
 
 
 		for (int i = 1; i <= 100; i++) {
