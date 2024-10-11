@@ -13,6 +13,10 @@ public class Main {
 		StringTokenizer st = new StringTokenizer(bf.readLine());
 		int a = Integer.parseInt(st.nextToken());
 		while (true) {
+			if (a == 1) {
+				System.out.println(cnt);
+				break;
+			}
 
 			if (a % 2 == 0) {
 				a /= 2;
@@ -22,10 +26,6 @@ public class Main {
 			}
 
 			cnt++;
-			if (a == 1) {
-				System.out.println(cnt);
-				break;
-			}
 
 		}
 
