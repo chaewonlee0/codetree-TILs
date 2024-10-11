@@ -17,7 +17,7 @@ public class Main {
 		for (int i = 1; i <= b; i++) {
 				prod *= a;
 
-		System.out.println(prod);
 	}
+		System.out.println(prod);
 }
 }
