@@ -15,16 +15,24 @@ public class Main {
 		
 		Stack<Character> s = new Stack<>();
 		
+		boolean b = true;
+		
 		for(int i =0; i< c.length; i++) {
 			if(c[i]=='(')
 			s.push(c[i]);
 			
-			else if(c[i]==')') {
-				s.pop();
+			else if(c[i]==')' ) {
+				if(!s.isEmpty()) {
+					s.pop();
+				}
+				else {
+					b = false;
+				}
+				
 			}
 		}
 		
-		if(!s.empty()) {
+		if(!b || !s.isEmpty()) {
 			System.out.println("No");
 		}
 		else {
