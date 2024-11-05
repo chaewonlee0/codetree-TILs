@@ -19,7 +19,7 @@ public class Main {
 			if(c[i]=='(')
 			s.push(c[i]);
 			
-			else if(c[i]==')' && !s.empty()) {
+			else if(c[i]==')') {
 				s.pop();
 			}
 		}
